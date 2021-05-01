@@ -7,11 +7,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@Slf4j
 public class LogTestController {
 
     //@Slf4j 롬복을 통해 코드 생략가능
-//    private final Logger log = LoggerFactory.getLogger(getClass());
+    private final Logger log = LoggerFactory.getLogger(getClass());
+
+
 
     @RequestMapping("/log-test")
     public String logTest() {
